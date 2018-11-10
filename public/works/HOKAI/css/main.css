@@ -1,0 +1,186 @@
+/*********Imported Goods**********/
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+/*********************************/
+
+
+/*********************************
+General
+*********************************/
+    .LargeRect{
+        margin:0 0 0 0;
+        padding:0 0 0 0;
+        display:inline-block;
+        height:5em;
+        width:50%;
+        float:left;
+    }
+
+    .SmallSquare{
+        margin:0 0 0 0;
+        display:inline-block;
+        height:50%;
+        width:50%;
+        float:left;
+    }
+
+    .LargeSquare{
+        margin:0;
+        padding:0;
+        display:inline-block;
+        background:white;
+    }
+
+    #wrapper {
+        max-width: 400px;
+    }
+
+    img{
+        max-width:100%;
+    }
+/*********************************
+Header
+*********************************/
+    header{
+        margin-top:0;
+        height:200px;
+    
+    }
+
+    h1{
+        font-size:3.9em; /**4.875em = 78px **/
+        margin:0 0 0 0;
+        padding:0 0 0 0;
+        font-family:sans-serif;
+        display:inline-block;
+        height:100%;
+        width:50%;
+        float:left;
+    }
+
+    h2{
+        font-weight:normal;
+        font-size: 1.5rem;
+        font-family:lato;
+        float:left;
+    }
+
+    h3{
+        font-family:Lato;
+        font-size:3em;
+    }
+/*********************************
+Body
+*********************************/
+
+    .ParentContainer{
+        width:100%;
+        height:62.6em;
+        margin-top:-1px;
+    }
+
+    .ChildContainer1{
+        width:100%;
+        height:20%;
+    }
+
+    .ChildContainer2{
+        width:100%;
+        height:20%;
+    }
+
+    .ChildContainer3{
+        width:100%;
+        height:20%;
+    }
+
+    .ChildContainer4{
+        width:100%;
+        height:20%;
+    }
+
+    .ChildContainer5{
+        width:100%;
+        height:20%;
+    }
+
+    .NonImageSquare{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:50%;
+        float:left;
+        display:inline-block;
+    }
+
+    .ImageSquare{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:50%;
+        float:left;
+        display:inline-block;
+    }
+/*********************************
+Nav
+*********************************/
+
+/*********************************
+Footer
+*********************************/
+    footer{
+        clear:both;   
+    }
+/*********************************
+Color
+*********************************/
+   body{
+       background:#383838;
+   }
+
+    h1{
+        color:black;   
+        background:white;
+   }
+
+    h2{
+        background:white;
+        color:blackl
+   }
+
+    h3{
+        background:white;   
+        color:black;   
+   }
+
+    footer{
+        color:white;
+        font-family:lato;
+   }
+
+    .NonImageSquare{
+        background:white   
+    }
+
+    .ImageSquare{
+        /**AllImageSquares**/  
+    }
+
+    .SquareColor1{
+        background:#1CC2F8;
+    }
+
+    .SquareColor2{
+        background:#FC494D;
+        }
+
+    .SquareColor3{
+        background:#F6F19D;
+        }
+
+    .SquareColor4{
+        background:#D0F486;
+        }
+
+    .SquareColor5{
+        background:#51FFCE;
+        }

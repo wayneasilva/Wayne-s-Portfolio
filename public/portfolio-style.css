@@ -1,0 +1,300 @@
+/**************************************
+	General
+**************************************/
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+} 
+
+.maincontent {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 0;
+} 
+
+a {
+    text-decoration: none; 
+} 
+
+html {
+    font-family: lato;   
+} 
+
+#scalingwrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+/**************************************
+	Header
+**************************************/
+header {
+    position: relative;
+} 
+
+.porticon {
+    width: 11%;
+    margin: 0;
+    position: absolute;
+} 
+
+h1 {
+    width: 50%;
+    text-align: right;
+    font-weight: 100;
+    font-size: 4em;
+    margin: 0 0 0 50%;
+    padding: 0;
+} 
+
+h2 {
+    width: 50%;
+    font-weight: 600;
+    text-align: right;   
+    font-style: italic;
+    font-size: 1.5em;
+    margin: 0 0 1em 50%;
+    padding: 0;
+} 
+
+.headerwrap {
+    width: 100%;
+}
+/**************************************
+	Body
+**************************************/
+.content {
+    display: -webkit-flex;
+    display: flex;
+} 
+
+#work {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+} 
+
+#work img {
+    height: 50%;
+    width: 100%;
+} 
+
+.coverpic {
+    height:35%;
+    max-width: 100%;
+} 
+
+ #skills-container {
+    display: grid;
+    grid-gap: 5px;
+    max-width: 960px;
+}
+
+#skills-container > div {
+    background-color: rgb(134, 255, 229);
+    font-size: 2em;
+    font-weight: 800;
+    /* border: 1px solid rgb(0, 78, 167); */
+    /* border-radius: 1%; */
+}
+
+#skills-container > div > div {
+    /* background-color: rgb(21, 253, 79); */
+    color: rgb(59, 43, 43);
+    padding-left: 1%;
+}
+
+#html-skill-level {
+    background-color: rgb(255, 60, 0);
+    width: 100%;
+}
+
+#css-skill-level {
+    background-color: rgb(21, 122, 253);
+    width: 100%;
+}
+
+#js-skill-level {
+    background-color: rgb(253, 249, 21);
+    width: 80%;
+}
+
+#node-skill-level {
+    background-color: rgb(83, 255, 126);
+    width: 75%;
+}
+
+#python-skill-level {
+    background-color: rgb(255, 252, 53);
+    width: 90%;
+}
+
+#express-skill-level {
+    background-color: rgb(121, 73, 255);
+    width: 80%;
+}
+
+#mongo-skill-level {
+    background-color: rgb(52, 202, 89);
+    width: 100%;
+}
+
+/* .coverpic img {
+    height: 100%;
+    width: 100%;
+}  */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #ccc;
+    margin: 1em 0 2em 0;
+    padding: 0;
+} 
+
+#featured {
+    font-size: 1.8em;   
+} 
+
+.portobject1 {
+    height: 100%;
+    width: 32%;   
+    text-align: center;
+    margin: 0 2% 0 0;
+} 
+
+.portobject2 {
+    height: 100%;
+    width: 32%;   
+    text-align: center;
+    margin: 0 2% 0 0;
+} 
+
+.portobject3 {
+    height: 100%;
+    width: 32%;   
+    text-align: center;
+    margin: 0;
+} 
+
+.aboutme {
+    /* text-align: center; */
+    font-weight: 800;
+    max-width: 75%;
+    margin: auto;
+    /* margin-left: 25%; */
+    /* margin-right: 25%; */
+} 
+
+.contact {
+    font-weight: 800;
+    margin: auto;
+}
+
+/**************************************
+	Footer
+**************************************/
+footer {
+    text-align: center;
+    margin: 0;
+} 
+
+/**************************************
+	Color
+**************************************/
+a {
+    color: #000;
+}    
+
+a:visited {
+    color: #000;
+} 
+
+a:hover{
+    color: #000;   
+} 
+
+/**************************************
+	Nav
+**************************************/
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+} 
+
+nav ul {
+    list-style: none;
+} 
+
+nav li {
+    display: inline-block
+} 
+
+/**************************************
+    Media queries
+**************************************/
+/* 
+@media (min-width: 600px) {
+    .portobject1, 
+    .portobject2, 
+    .portobject3 {
+        width: 100%;
+        border: 1px solid black; 
+    }
+} */
+
+@media (max-width: 960px){
+  #work {
+      flex-direction: column;
+   }
+
+  .portobject1, 
+  .portobject2, 
+  .portobject3 {
+      width: 100%;
+      /* padding: 15%; */
+      /* border: 1px solid black; */
+   }
+}
+
+@media(max-width: 600px) {
+    .porticon {
+        display:none;
+    }
+
+    header {
+        
+    }
+
+    h1 {
+        width: 50%;
+        text-align: left;
+        font-weight: 100;
+        font-size: 4em;
+        margin: 0;
+        padding: 0;
+    } 
+    
+    h2 {
+        width: 50%;
+        font-weight: 800;
+        text-align: left;   
+        /* font-style: italic; */
+        /* font-size: 1.5em; */
+        margin: 0;
+        padding: 0;
+    } 
+
+    .aboutme {
+        /* text-align: center; */
+        max-width: 100%;
+        /* margin: auto; */
+        /* margin-left: 25%; */
+        /* margin-right: 25%; */
+    } 
+}

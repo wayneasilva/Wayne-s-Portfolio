@@ -1,0 +1,84 @@
+<% include ./partials/header %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wayne A. Silva | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/portfolio-style.css">
+</head>
+    <body>
+        <nav>
+            <ul>
+                <a href="/"><li>MAIN</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+            </ul>
+        </nav>
+        <div id="scalingwrapper">
+            <section class="maincontent">
+                <div id="headerwrap">
+                    <header>
+                        <div class="porticon">
+                            <img src="img/arrow.png" alt="My webpage cover pic.">
+                        </div>
+                        <h1>Wayne Silva</h1>
+                        <h2>Fullstack Developer</h2>
+                    </header>
+                    <hr>
+                </div>
+                <div class="coverpic">
+                    <!-- <img src="img/coverpic.png" alt="My webpage cover pic."> -->
+                    <section id="skills-container">
+                        <div id="html">
+                            <div id="html-skill-level"><i class="fab fa-html5"></i>HTML 100%</div>
+                        </div>
+                        <div id="css">
+                            <div id="css-skill-level"><i class="fab fa-css3"></i>CSS 100%</div>
+                        </div>
+                        <div id="javascript">
+                            <div id="js-skill-level"><i class="fab fa-js-square"></i>JS</div>
+                        </div>
+                        <div id="node">
+                            <div id="node-skill-level"><i class="fab fa-node-js"></i>NODE</div>
+                        </div>
+                        <div id="python">
+                            <div id="python-skill-level"><i class="fab fa-python"></i>PYTHON</div>
+                        </div>
+                        <div id="express">
+                            <div id="express-skill-level"><i class="fas fa-code"></i>EXPRESS</div>
+                        </div>
+                        <div id="mongo">
+                            <div id="mongo-skill-level"><i class="fas fa-code"></i>MONGODB</div>
+                        </div>
+                    </section>  
+                </div>
+            <section id="portfolio">
+                <p id="featured">Featured Work</p>
+                <div id="work">
+                    <div class="portobject1">
+                        <a href="works/CHITSU/index.htm"><img src="img/Chitsu.png" alt="My webpage design mock"></a>
+                        <a href="works/CHITSU/index.htm"><p>CHITSU</p></a>
+                    </div>
+                    <div class="portobject2">
+                        <a href="works/HOKAI/index.html"><img src="img/hokai.png" alt="My webpage design mock"></a>
+                        <a href="works/HOKAI/index.html"><p>HOKAI</p></a>
+                    </div>
+                    <div class="portobject3">
+                        <a href="works/SENBONZAKURA/SenbonzakuraMainPage.html"><img src="img/senbonzakura.png" alt="My webpage design mock"></a>
+                        <a href="works/SENBONZAKURA/SenbonzakuraMainPage.html"><p>SENBON</p></a>
+                    </div>
+                </div>
+            </section>
+                <footer>
+                    <p>&copy;Wayne Silva 2015</p>
+                </footer>
+            </section>
+        </div>
+        <script src="scrits/scripts.js"></script>
+    </body>
+</html>
+<% include ./partials/footer %>
