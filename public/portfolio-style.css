@@ -28,6 +28,10 @@ html {
     margin: 0 auto;
     padding: 0;
 }
+
+.scaleUp {
+    transform: scale(1.1);
+}
 /**************************************
 	Header
 **************************************/
@@ -71,23 +75,7 @@ h2 {
     display: flex;
 } 
 
-#work {
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-} 
-
-#work img {
-    height: 50%;
-    width: 100%;
-} 
-
-.coverpic {
-    height:35%;
-    max-width: 100%;
-} 
-
- #skills-container {
+#skills-container {
     display: grid;
     grid-gap: 5px;
     max-width: 960px;
@@ -142,10 +130,29 @@ h2 {
     width: 100%;
 }
 
-/* .coverpic img {
-    height: 100%;
+#work {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-}  */
+} 
+
+#work img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+} 
+
+.column {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.coverpic {
+    height:35%;
+    max-width: 100%;
+} 
 
 hr {
     display: block;
@@ -161,21 +168,24 @@ hr {
 } 
 
 .portobject1 {
-    height: 100%;
+    border: 1px solid lightgray;
+    height: 200px;
     width: 32%;   
     text-align: center;
     margin: 0 2% 0 0;
 } 
 
 .portobject2 {
-    height: 100%;
+    border: 1px solid lightgray;
+    height: 200px;
     width: 32%;   
     text-align: center;
     margin: 0 2% 0 0;
 } 
 
 .portobject3 {
-    height: 100%;
+    border: 1px solid lightgray;
+    height: 200px;
     width: 32%;   
     text-align: center;
     margin: 0;
@@ -249,7 +259,7 @@ nav li {
 } */
 
 @media (max-width: 960px){
-  #work {
+  #work > .column{
       flex-direction: column;
    }
 
@@ -267,9 +277,9 @@ nav li {
         display:none;
     }
 
-    header {
+    /* header {
         
-    }
+    } */
 
     h1 {
         width: 50%;
