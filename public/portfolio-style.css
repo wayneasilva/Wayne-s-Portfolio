@@ -29,8 +29,12 @@ html {
     padding: 0;
 }
 
+/**************************************
+	Classes used in DOM manipulation
+**************************************/
 .scaleUp {
     transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
 /**************************************
 	Header
@@ -82,7 +86,8 @@ h2 {
 }
 
 #skills-container > div {
-    background-color: rgb(134, 255, 229);
+    /* background-color: rgb(134, 255, 229); */
+    background-color: rgb(247, 247, 247);
     font-size: 2em;
     font-weight: 800;
     /* border: 1px solid rgb(0, 78, 167); */
@@ -92,6 +97,7 @@ h2 {
 #skills-container > div > div {
     /* background-color: rgb(21, 253, 79); */
     color: rgb(59, 43, 43);
+    opacity: 0.8;
     padding-left: 1%;
 }
 
@@ -137,11 +143,19 @@ h2 {
     width: 100%;
 } 
 
-#work img {
+.site-name {
+    display: block;
+    background-color: rgb(63, 63, 63);
+    height: 200px;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.5em;
+}
+/* #work img {
     height: 75%;
     width: 100%;
     object-fit: cover;
-} 
+}  */
 
 .column {
     display: flex;
@@ -158,7 +172,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 3px solid #ccc;
+    border-top: 3px solid rgb(236, 236, 236);
     margin: 1em 0 2em 0;
     padding: 0;
 } 
@@ -168,11 +182,17 @@ hr {
 } 
 
 .portobject1 {
+    display: flex;
     border: 1px solid lightgray;
     height: 200px;
-    width: 32%;   
+    width: 100%;   
     text-align: center;
     margin: 0 2% 0 0;
+} 
+
+.portobject1 > a {
+    height: 100%;
+    width: 100%;
 } 
 
 .portobject2 {
