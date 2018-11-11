@@ -144,18 +144,19 @@ h2 {
 } 
 
 .site-name {
-    display: block;
-    background-color: rgb(63, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 200px;
     width: 100%;
-    color: #FFF;
+    /* color: #FFF; */
     font-size: 1.5em;
 }
-/* #work img {
-    height: 75%;
-    width: 100%;
-    object-fit: cover;
-}  */
+
+.site-name > p {
+    color: #FFF;
+    font-size: 2em;
+}
 
 .column {
     display: flex;
@@ -188,6 +189,8 @@ hr {
     width: 100%;   
     text-align: center;
     margin: 0 2% 0 0;
+    /* padding: 50% 0; */
+    background-color: rgb(63, 63, 63);
 } 
 
 .portobject1 > a {
@@ -196,19 +199,33 @@ hr {
 } 
 
 .portobject2 {
+    display: flex;
     border: 1px solid lightgray;
     height: 200px;
-    width: 32%;   
+    width: 100%;   
     text-align: center;
     margin: 0 2% 0 0;
+    background-color: rgb(63, 63, 63)
+} 
+
+.portobject2 > a {
+    height: 100%;
+    width: 100%;
 } 
 
 .portobject3 {
+    display: flex;
     border: 1px solid lightgray;
     height: 200px;
-    width: 32%;   
+    width: 100%;   
     text-align: center;
     margin: 0;
+    background-color: rgb(63, 63, 63);
+} 
+
+.portobject3 > a {
+    height: 100%;
+    width: 100%;
 } 
 
 .aboutme {
