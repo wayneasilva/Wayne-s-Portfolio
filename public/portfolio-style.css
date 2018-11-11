@@ -314,10 +314,6 @@ nav li {
         display:none;
     }
 
-    /* header {
-        
-    } */
-
     h1 {
         width: 50%;
         text-align: left;
@@ -331,17 +327,11 @@ nav li {
         width: 50%;
         font-weight: 800;
         text-align: left;   
-        /* font-style: italic; */
-        /* font-size: 1.5em; */
         margin: 0;
         padding: 0;
     } 
 
     .aboutme {
-        /* text-align: center; */
         max-width: 100%;
-        /* margin: auto; */
-        /* margin-left: 25%; */
-        /* margin-right: 25%; */
     } 
 }
