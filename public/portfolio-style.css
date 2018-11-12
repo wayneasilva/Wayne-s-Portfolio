@@ -219,7 +219,7 @@ hr {
     height: 200px;
     width: 100%;   
     text-align: center;
-    margin: 0;
+    margin: 0 0 5px 0;
 } 
 
 .portobject3 > a {
