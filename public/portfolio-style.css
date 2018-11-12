@@ -344,10 +344,6 @@ nav li {
 }
 
 @media(max-width: 600px) {
-    .porticon {
-        display:none;
-    }
-
     h1 {
         width: 50%;
         text-align: left;
@@ -368,4 +364,10 @@ nav li {
     .aboutme {
         max-width: 100%;
     } 
+}
+
+@media(max-width: 804px) {
+    .porticon {
+        display:none;
+    }
 }
