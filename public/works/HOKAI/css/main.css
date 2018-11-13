@@ -5,18 +5,35 @@
 /*********************************
 General
 *********************************/
-
+* {
+    margin: 0;
+    padding: 0;
+}
 /*********************************
 Header
 *********************************/
 header {
     grid-row: 1;
-    grid-column: 1 / -1;
+    grid-column: 2;
+    margin: 0;
+    font-size: 2em;
 }
 
-header {
-    grid-row: 1;
-    grid-column: 2;
+h1 {
+    font-size: 2em;
+}
+
+#date {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1;
+    grid-row: 2;
+    font-size:1.5em;
+}
+
+#date > p {
+    font-family: lato;
+    /* font-weight: 800; */
 }
 /*********************************
 Body
@@ -67,4 +84,31 @@ footer {
 /*********************************
 Color
 *********************************/
-   
+h1, p {
+    color: rgb(58, 58, 58);
+}
+/*********************************
+Media Queries
+*********************************/
+@media(max-width: 600px) {
+    #main {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    header {
+        grid-column: 1;
+    }
+
+    #clock-section {
+        grid-column: 1;
+    }
+}
+
+@media(min-width: 600px) {
+    #main {
+        margin-top: 25vh;
+    }
+}
